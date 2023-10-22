@@ -1,0 +1,24 @@
+{
+    "java.project.referencedLibraries": {
+        "include": [
+            "lib/**/*.jar",
+            "javafx-sdk-20.0.1/lib/javafx.controls.jar",
+            "javafx-sdk-20.0.1/lib/javafx.fxml.jar",
+            "javafx-sdk-20.0.1/lib/javafx.media.jar",
+            "javafx-sdk-20.0.1/lib/javafx.swing.jar",
+            "javafx-sdk-20.0.1/lib/javafx.web.jar",
+            "c:\\Users\\rowan\\Documents\\JavaFX\\javafx-sdk-20\\lib\\javafx.controls.jar",
+            "c:\\Users\\rowan\\Documents\\JavaFX\\javafx-sdk-20\\lib\\javafx.fxml.jar",
+            "c:\\Users\\rowan\\Documents\\JavaFX\\javafx-sdk-20\\lib\\javafx.graphics.jar",
+            "c:\\Users\\rowan\\Documents\\JavaFX\\javafx-sdk-20\\lib\\javafx.media.jar",
+            "c:\\Users\\rowan\\Documents\\JavaFX\\javafx-sdk-20\\lib\\javafx.swing.jar",
+            "c:\\Users\\rowan\\Documents\\JavaFX\\javafx-sdk-20\\lib\\javafx.web.jar",
+            "junit5.jar"
+        ],
+        "exclude": [
+            "c:\\Users\\rowan\\Documents\\JavaFX\\javafx-sdk-20\\lib\\javafx-swt.jar",
+            "javafx-sdk-20.0.1/lib/javafx-swt.jar"
+        ]
+    },
+    "java.debug.settings.onBuildFailureProceed": true
+}

@@ -1,0 +1,23 @@
+
+
+{
+
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "MapBackend",
+            "request": "launch",
+            "mainClass": "MapBackend",
+            "projectName": "Project3_BF_red_3cf006aa"
+        },
+        {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "displayFrontend",
+            "vmArgs": "--module-path C:\\Users\\rowan\\Documents\\JavaFX\\javafx-sdk-20\\lib --add-modules javafx.controls,javafx.fxml"
+        }
+    ]
+}
+

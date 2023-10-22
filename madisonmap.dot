@@ -1,0 +1,206 @@
+digraph madisonmap {
+
+    "W Dayton / N Park Bus Stop" -> "N Lake / W Johnson Bus Stop" [label="2, bus"];
+    "N Lake / W Johnson Bus Stop" -> "N Lake / University Bus Stop" [label="2, bus"];
+    "N Lake / University Bus Stop" -> "N Lake / Langdon Bus Stop" [label="2, bus"];
+    "N Lake / Langdon Bus Stop" -> "Langdon / N Park Bus Stop" [label="2, bus"];
+    "Langdon / N Park Bus Stop" -> "Observatory / Bascom Bus Stop" [label="2, bus"];
+    "Observatory / Bascom Bus Stop" -> "Observatory / N Charter Bus Stop" [label="2, bus"];
+    "Observatory / N Charter Bus Stop" -> "Linden / N Charter Bus Stop (WB)" [label="2, bus"];
+    "Linden / N Charter Bus Stop (WB)" -> "Linden / Babcock Bus Stop (WB)" [label="2, bus"];
+    "Linden / Babcock Bus Stop (WB)" -> "Observatory / Babcock Bus Stop (WB)" [label="2, bus"];
+    "Observatory / Babcock Bus Stop (WB)" -> "Observatory / Elm Bus Stop (WB)" [label="2, bus"];
+    "Observatory / Elm Bus Stop (WB)" -> "Observatory / Colwood Bus Stop (WB)" [label="2, bus"];
+    "Observatory / Colwood Bus Stop (WB)" -> "Highland / Observatory Bus Stop (NB)" [label="2, bus"];
+    "Highland / Observatory Bus Stop (NB)" -> "Observatory / Colwood Bus Stop (EB)" [label="2, bus"];
+    "Observatory / Colwood Bus Stop (EB)" -> "Observatory / Elm Bus Stop (EB)" [label="2, bus"];
+    "Observatory / Elm Bus Stop (EB)" -> "Observatory / Babcock Bus Stop (EB)" [label="2, bus"];
+    "Observatory / Babcock Bus Stop (EB)" -> "Babcock / Linden Bus Stop (SB)" [label="2, bus"];
+    "Babcock / Linden Bus Stop (SB)" -> "Linden / N Charter Bus Stop (EB)" [label="2, bus"];
+    "Linden / N Charter Bus Stop (EB)" -> "N Charter / University Bus Stop" [label="2, bus"];
+    "N Charter / University Bus Stop" -> "N Randall / Engineering Hall Bus Stop" [label="2, bus"];
+    "N Randall / Engineering Hall Bus Stop" -> "W Dayton / N Orchard Bus Stop" [label="2, bus"];
+    "W Dayton / N Orchard Bus Stop" -> "W Dayton / N Mills Bus Stop" [label="2, bus"];
+    "W Dayton / N Mills Bus Stop" -> "W Dayton / N Park Bus Stop" [label="2, bus"];
+
+    "Observatory / Colwood Bus Stop (WB)" -> "Observatory / Colwood Bus Stop (EB)" [label="0.1, walk"];
+    "Observatory / Elm Bus Stop (WB)" -> "Observatory / Elm Bus Stop (EB)" [label="0.1, walk"];
+    "Observatory / Babcock Bus Stop (EB)"-> "Observatory / Babcock Bus Stop (WB)" [label="0.1, walk"];
+    "Babcock / Linden Bus Stop (SB)" -> "Linden / Babcock Bus Stop (WB)" [label="0.1, walk"];
+    "Linden / N Charter Bus Stop (WB)" -> "Linden / N Charter Bus Stop (EB)" [label="0.2, walk"];
+
+
+    // Smith
+    "Smith Residence Hall" -> "W Dayton / N Park Bus Stop" [label="3, walk"];
+    "Smith Residence Hall" -> "Ogg Residence Hall" [label="2, walk"];
+    "Smith Residence Hall" -> "Merit Residence Hall" [label="3, walk"];
+    "Smith Residence Hall" -> "Nicholas Recreation Center" [label="4, walk"];
+    "Smith Residence Hall" -> "The Kohl Center" [label="4, walk"];
+
+
+    // Ogg
+    "Ogg Residence Hall" -> "Sellery Residence Hall" [label="2, walk"];
+    "Ogg Residence Hall" -> "Nicholas Recreation Center" [label="1, walk"];
+    "Ogg Residence Hall" -> "Merit Residence Hall" [label="2, walk"];
+    "Ogg Residence Hall" -> "W Dayton / N Park Bus Stop" [label="0.1, walk"];
+
+    // Merit Residence Hall
+    "Merit Residence Hall" -> "Teacher Education Building" [label="3, walk"];
+    "Merit Residence Hall" -> "Grainger Hall" [label="4, walk"];
+
+    // Nicholas Recreation Center
+    "Nicholas Recreation Center" -> "The Kohl Center" [label="1, walk"];
+    "Nicholas Recreation Center" -> "Gordon Dining Center" [label="1, walk"];
+
+    // Fluno Center
+    "Fluno Center" -> "N Lake / University Bus Stop" [label="0.5, walk"];
+    "Fluno Center" -> "East Campus Mall" [label="3, walk"];
+
+    // East Campus Mall
+    "East Campus Mall" -> "Gordon Dining Center" [label="2,walk"];
+    "East Campus Mall" -> "Witte Residence Hall" [label="3,walk"];
+
+    // Gordon Dining Center
+    "Gordon Dining Center" -> "Witte Residence Hall" [label="2,walk"];
+    "Gordon Dining Center" -> "Sellery Residence Hall" [label="2,walk"];
+
+    // Witte Residence Hall
+    "Witte Residence Hall" -> "N Lake / W Johnson Bus Stop" [label="2,walk"];
+
+    // Memorial Library
+    "Memorial Library" -> "N Lake / Langdon Bus Stop" [label="0.3, walk"];
+    "Memorial Library" -> "Memorial Union" [label="2, walk"];
+
+
+    // Memorial Union
+    "Memorial Union" -> "Langdon / N Park Bus Stop" [label="0.1, walk"];
+    "Memorial Union" -> "Mosse Humanities Building" [label="4, walk"];
+
+    // Chadbourne Residence Hall
+    "Chadbourne Residence Hall" -> "Mosse Humanities Building" [label="2, walk"];
+    "Chadbourne Residence Hall" -> "Grainger Hall" [label="2, walk"];
+
+    // Grainger Hall
+    "Grainger Hall" -> "Chemistry Building" [label="3.5, walk"];
+    "Grainger Hall" -> "Vilas Hall" [label="2, walk"];
+    "Grainger Hall" -> "Educational Sciences" [label="3, walk"];
+
+    // Vilas Hall
+    "Vilas Hall" -> "Sellery Residence Hall" [label="2, walk"];
+    "Vilas Hall" -> "East Campus Mall" [label="1, walk"];
+    "Vilas Hall" -> "Mosse Humanities Building" [label="2, walk"];
+
+    // Science Hall
+    "Science Hall" -> "Langdon / N Park Bus Stop" [label="1, walk"];
+    "Science Hall" -> "Helen C. White Hall" [label="2, walk"];
+    "Science Hall" -> "Memorial Union" [label="2, walk"];
+
+    // Bascom Hall
+    "Bascom Hall" -> "Observatory / Bascom Bus Stop" [label="0.2, walk"];
+    "Bascom Hall" -> "Science Hall" [label="3, walk"];
+
+    // Sewell Social Sciences
+    "Sewell Social Sciences" -> "Observatory / N Charter Bus Stop" [label="0.1, walk"];
+    "Sewell Social Sciences" -> "Ingraham Hall" [label="1, walk"];
+    "Sewell Social Sciences" -> "Helen C. White Hall" [label="4, walk"];
+
+    // Van Hise Hall
+    "Van Hise Hall" -> "Linden / N Charter Bus Stop (WB)" [label="0.1, walk"];
+    "Van Hise Hall" -> "Ingraham Hall" [label="2, walk"];
+    "Van Hise Hall" -> "Medical Sciences Center" [label="3.5, walk"];
+
+    // Microbial Sciences
+    "Microbial Sciences" -> "Linden / Babcock Bus Stop (WB)" [label="0.1, walk"];
+    "Microbial Sciences" -> "Agriculture Hall" [label="3, walk"];
+
+    // Agriculture Hall
+    "Agriculture Hall" -> "Van Hise Hall" [label="3.5,walk"];
+    "Agriculture Hall" -> "DeLuca Biochemistry Building" [label="3,walk"];
+
+    // Engineering Hall
+    "N Randall / Engineering Hall Bus Stop" -> "Engineering Hall" [label="0.3,walk"];
+    "Engineering Hall" -> "DeLuca Biochemistry Building" [label="4,walk"];
+    "Engineering Hall" -> "Union South" [label="2,walk"];
+
+    // Union South
+    "N Randall / Engineering Hall Bus Stop" -> "Union South" [label="0.4,walk"];
+    "Union South" -> "Wendt Commons" [label="0.2, walk"];
+    "Union South" -> "Computer Sciences" [label="1,walk"];
+    "Union South" -> "Discovery Building" [label="2.5,walk"];
+
+    // Discovery Building
+    "Discovery Building" -> "Medical Sciences Center" [label="4,walk"];
+    "Discovery Building" -> "Brogden Psychology Building" [label="2.5,walk"];
+
+    // Brogden Psychology Building
+    "Brogden Psychology Building" -> "Computer Sciences" [label="2.5, walk"];
+    "Brogden Psychology Building" -> "Chemistry Building" [label="2, walk"];
+    "Brogden Psychology Building" -> "Medical Sciences Center" [label="3.5, walk"];
+
+    // Chemistry Building
+    "Chemistry Building" -> "Chamberlin Hall" [label="3, walk"];
+
+    // Computer Sciences
+    "Computer Sciences" -> "W Dayton / N Orchard Bus Stop" [label="0.5,walk"];
+    "Computer Sciences" -> "Noland Hall" [label="3,walk"];
+
+    // Noland Hall
+    "Noland Hall" -> "Teacher Education Building" [label="0.5,walk"];
+
+    // Teacher Education
+    "Teacher Education Building" -> "W Dayton / N Mills Bus Stop" [label="0.5, walk"];
+    "Teacher Education Building" -> "Educational Sciences" [label="1, walk"];
+
+    // Educational Sciences
+    "Educational Sciences" -> "Chemistry Building" [label="2, walk"];
+
+    // Camp Randall
+    "Camp Randall Stadium" -> "Wendt Commons" [label="7,walk"];
+
+    // Sterling Hall
+    "Sterling Hall" -> "Linden / N Charter Bus Stop (EB)" [label="0.4, walk"];
+
+    // Medical Sciences Center
+    "Medical Sciences Center" -> "N Charter / University Bus Stop" [label="0.1, walk"];
+    "Medical Sciences Center" -> "Chamberlin Hall" [label="2, walk"];
+
+    // Chamberlin Hall
+    "Chamberlin Hall" -> "Sterling Hall" [label="1.5, walk"];
+
+    // Van Vleck Hall
+    "Van Vleck Hall" -> "Sterling Hall" [label="0.5, walk"];
+    "Van Vleck Hall" -> "Birge Hall" [label="0.5, walk"];
+    "Van Vleck Hall" -> "Bascom Hall" [label="0.5, walk"];
+    "Van Vleck Hall" -> "Ingraham Hall" [label="0.5, walk"];
+
+
+
+    // Slichter Residence Hall
+    "Slichter Residence Hall" -> "Observatory / Babcock Bus Stop (WB)" [label="0.5, walk"];
+    "Slichter Residence Hall" -> "Microbial Sciences" [label="2.5, walk"];
+
+    // Dejope Residence Hall
+    "Dejope Residence Hall" -> "Observatory / Elm Bus Stop (WB)" [label="0.5, walk"];
+    "Dejope Residence Hall" -> "Phillips Residence Hall" [label="0.5, walk"];
+    "Dejope Residence Hall" -> "Bradley Residence Hall" [label="0.5, walk"];
+
+    // Bradley Residence Hall
+    "Bradley Residence Hall" -> "Phillips Residence Hall" [label="1.5,walk"];
+    "Bradley Residence Hall" -> "Kronshage Residence Hall" [label="2.5,walk"];
+
+    // Kronshage Residence Hall
+    "Kronshage Residence Hall" -> "Adams Residence Hall" [label="1, walk"];
+    "Kronshage Residence Hall" -> "Slichter Residence Hall" [label="1, walk"];
+
+
+    // Bakke Recreation Center
+    "Bakke Recreation Center" -> "Observatory / Colwood Bus Stop (WB)" [label="0.2, walk"];
+    "Bakke Recreation Center" -> "Dejope Residence Hall" [label="2, walk"];
+
+
+    // University Hospital
+    "University Hospital" -> "Highland / Observatory Bus Stop (NB)" [label="0.3, walk"];
+    "University Hospital" -> "Bakke Recreation Center" [label="10, walk"];
+
+
+}
